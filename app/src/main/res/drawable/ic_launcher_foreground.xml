@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Intera launcher foreground — properly using only <path> and <group> elements
+  valid in Android VectorDrawable format (no SVG-only <line> elements).
+  All "lines" are expressed as stroke paths with M/L commands.
+  Canvas: 108×108dp, safe zone: 72×72dp centred at (54,54).
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- ── Outer hexagon ring (Electric Blue, hairline stroke) ── -->
+    <path
+        android:fillColor="#0000BFFF"
+        android:strokeColor="#CC00BFFF"
+        android:strokeWidth="1.2"
+        android:pathData="M54,18 L73,28.5 L73,49.5 L90,59 L73,68.5 L73,89.5 L54,100 L35,89.5 L35,68.5 L18,59 L35,49.5 L35,28.5 Z" />
+
+    <!-- ── Inner hexagon ring (Neon Green) ── -->
+    <path
+        android:fillColor="#0800FF88"
+        android:strokeColor="#CC00FF88"
+        android:strokeWidth="0.8"
+        android:pathData="M54,26 L67,33.5 L67,48.5 L80,56 L67,63.5 L67,78.5 L54,86 L41,78.5 L41,63.5 L28,56 L41,48.5 L41,33.5 Z" />
+
+    <!-- ── Circuit trace lines as paths (Electric Blue, semi-transparent) ── -->
+    <!-- Top-left diagonal trace -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#8800BFFF"
+        android:strokeWidth="0.8"
+        android:strokeLineCap="round"
+        android:pathData="M36,30 L18,14" />
+    <!-- Top-left grid node horizontal -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#6600BFFF"
+        android:strokeWidth="0.7"
+        android:strokeLineCap="round"
+        android:pathData="M14,14 L22,14" />
+    <!-- Top-left grid node vertical -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#6600BFFF"
+        android:strokeWidth="0.7"
+        android:strokeLineCap="round"
+        android:pathData="M18,10 L18,18" />
+
+    <!-- Top-right diagonal trace -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#8800BFFF"
+        android:strokeWidth="0.8"
+        android:strokeLineCap="round"
+        android:pathData="M72,30 L90,14" />
+    <!-- Top-right grid node horizontal -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#6600BFFF"
+        android:strokeWidth="0.7"
+        android:strokeLineCap="round"
+        android:pathData="M86,14 L94,14" />
+    <!-- Top-right grid node vertical -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#6600BFFF"
+        android:strokeWidth="0.7"
+        android:strokeLineCap="round"
+        android:pathData="M90,10 L90,18" />
+
+    <!-- Bottom-left diagonal trace (Neon Green) -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#8800FF88"
+        android:strokeWidth="0.8"
+        android:strokeLineCap="round"
+        android:pathData="M36,82 L18,98" />
+
+    <!-- Bottom-right diagonal trace (Neon Green) -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#8800FF88"
+        android:strokeWidth="0.8"
+        android:strokeLineCap="round"
+        android:pathData="M72,82 L90,98" />
+
+    <!-- Left horizontal trace -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#6600BFFF"
+        android:strokeWidth="0.8"
+        android:strokeLineCap="round"
+        android:pathData="M18,56 L8,56" />
+
+    <!-- Right horizontal trace -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#6600BFFF"
+        android:strokeWidth="0.8"
+        android:strokeLineCap="round"
+        android:pathData="M90,56 L100,56" />
+
+    <!-- ── Android mascot head dome ── -->
+    <path
+        android:fillColor="#FFE8F4FD"
+        android:pathData="M54,38 C45,38 38,44.7 38,53 L38,65 C38,65.6 38.4,66 39,66 L69,66 C69.6,66 70,65.6 70,65 L70,53 C70,44.7 63,38 54,38 Z" />
+
+    <!-- Left antenna stroke -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFE8F4FD"
+        android:strokeWidth="2.2"
+        android:strokeLineCap="round"
+        android:pathData="M47,38 L41,31" />
+
+    <!-- Left antenna tip dot (Neon Green) -->
+    <path
+        android:fillColor="#FF00FF88"
+        android:pathData="M39,31 m-2.5,0 a2.5,2.5 0,1,0 5,0 a2.5,2.5 0,1,0 -5,0" />
+
+    <!-- Right antenna stroke -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFE8F4FD"
+        android:strokeWidth="2.2"
+        android:strokeLineCap="round"
+        android:pathData="M61,38 L67,31" />
+
+    <!-- Right antenna tip dot (Electric Blue) -->
+    <path
+        android:fillColor="#FF00BFFF"
+        android:pathData="M67,31 m-2.5,0 a2.5,2.5 0,1,0 5,0 a2.5,2.5 0,1,0 -5,0" />
+
+    <!-- Left eye (dark circle) -->
+    <path
+        android:fillColor="#FF0A0E1A"
+        android:pathData="M50,49 m-3,0 a3,3 0,1,0 6,0 a3,3 0,1,0 -6,0" />
+
+    <!-- Right eye (dark circle) -->
+    <path
+        android:fillColor="#FF0A0E1A"
+        android:pathData="M58,49 m-3,0 a3,3 0,1,0 6,0 a3,3 0,1,0 -6,0" />
+
+    <!-- Neck / lower body block (dark surface) -->
+    <path
+        android:fillColor="#FF1A2440"
+        android:pathData="M40,65 L40,73 C40,73.6 40.4,74 41,74 L67,74 C67.6,74 68,73.6 68,73 L68,65 Z" />
+
+    <!-- Neon green accent bar between head and neck -->
+    <path
+        android:fillColor="#FF00FF88"
+        android:pathData="M40,65 L68,65 L68,67 L40,67 Z" />
+
+    <!-- ── Corner circuit node dots ── -->
+    <!-- Top-left node (Neon Green) -->
+    <path
+        android:fillColor="#FF00FF88"
+        android:pathData="M18,14 m-2.5,0 a2.5,2.5 0,1,0 5,0 a2.5,2.5 0,1,0 -5,0" />
+    <!-- Top-right node (Electric Blue) -->
+    <path
+        android:fillColor="#FF00BFFF"
+        android:pathData="M90,14 m-2.5,0 a2.5,2.5 0,1,0 5,0 a2.5,2.5 0,1,0 -5,0" />
+    <!-- Bottom-left node (Neon Green) -->
+    <path
+        android:fillColor="#FF00FF88"
+        android:pathData="M18,98 m-2.5,0 a2.5,2.5 0,1,0 5,0 a2.5,2.5 0,1,0 -5,0" />
+    <!-- Bottom-right node (Electric Blue) -->
+    <path
+        android:fillColor="#FF00BFFF"
+        android:pathData="M90,98 m-2.5,0 a2.5,2.5 0,1,0 5,0 a2.5,2.5 0,1,0 -5,0" />
+
+    <!-- Left side dot (Electric Blue) -->
+    <path
+        android:fillColor="#FF00BFFF"
+        android:pathData="M8,56 m-2,0 a2,2 0,1,0 4,0 a2,2 0,1,0 -4,0" />
+    <!-- Right side dot (Electric Blue) -->
+    <path
+        android:fillColor="#FF00BFFF"
+        android:pathData="M100,56 m-2,0 a2,2 0,1,0 4,0 a2,2 0,1,0 -4,0" />
+
+</vector>

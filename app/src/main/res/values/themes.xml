@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      Theme.AppCompat.DayNight.NoActionBar is available via the
+      androidx.appcompat:appcompat transitive dependency (pulled in by
+      androidx.activity:activity-compose → androidx.activity:activity).
+      All visual theming is handled by Jetpack Compose / MaterialTheme.
+    -->
+    <style name="Theme.Intera" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Dark window background shown before Compose renders -->
+        <item name="android:windowBackground">@color/dark_navy</item>
+        <!-- Transparent status bar — enableEdgeToEdge() takes full control -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!-- Nav bar tinted to match the Intera dark surface -->
+        <item name="android:navigationBarColor">#FF0F1629</item>
+        <!-- Keep status bar icons white on dark background -->
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>
