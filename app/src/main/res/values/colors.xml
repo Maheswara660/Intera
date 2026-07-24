@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Intera Dark Tech Palette -->
+    <color name="dark_navy">#FF0A0E1A</color>
+    <color name="dark_surface">#FF0F1629</color>
+    <color name="card_surface">#FF141D35</color>
+    <color name="elevated_card">#FF1A2440</color>
+
+    <!-- Accent - Neon Green -->
+    <color name="neon_green">#FF00FF88</color>
+    <color name="neon_green_dim">#FF00CC6A</color>
+    <color name="neon_green_muted">#FF1A3D2E</color>
+
+    <!-- Accent - Electric Blue -->
+    <color name="electric_blue">#FF00BFFF</color>
+    <color name="electric_blue_dim">#FF0099CC</color>
+    <color name="electric_blue_muted">#FF0D2035</color>
+
+    <!-- Text -->
+    <color name="text_primary">#FFE8F4FD</color>
+    <color name="text_secondary">#FF8BA3C4</color>
+    <color name="text_disabled">#FF3D5175</color>
+
+    <!-- Status -->
+    <color name="success_green">#FF00E676</color>
+    <color name="warning_amber">#FFFFAB40</color>
+    <color name="error_red">#FFFF5252</color>
+
+    <!-- Borders -->
+    <color name="border_subtle">#FF1E2D4A</color>
+</resources>

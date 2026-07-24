@@ -1,0 +1,44 @@
+# Built-in GitIgnore template for Android/Kotlin projects
+
+# Gradle files
+.gradle/
+build/
+/*/build/
+
+# Local configuration files
+local.properties
+
+# Log files
+*.log
+
+# Keystore files (never check in signing keys)
+*.jks
+*.keystore
+*.pk8
+*.pem
+
+# Android Studio / IntelliJ IDEA files
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+.navigation/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# OS/Device specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# VS Code files
+.vscode/
+
+# Kotlin / Kotlin Multiplatform files
+.kotlin/
